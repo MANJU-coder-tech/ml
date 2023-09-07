@@ -1,0 +1,26 @@
+Summary of the steps to build a color detection project in Python:
+
+1. **Project Setup:**
+   - Organize your files: main Python script, sample image, and a CSV data file.
+
+2. **Argument Parsing:**
+   - Use `argparse` to accept the image path as a command-line argument.
+
+3. **Read CSV Data:**
+   - Load color data from a CSV file into a DataFrame using `pandas`.
+
+4. **GUI Setup:**
+   - Create an image window using `cv2.namedWindow()`.
+   - Set a mouse callback function with `cv2.setMouseCallback()`.
+
+5. **Mouse Callback Function:**
+   - Capture RGB values on double-click with the callback function.
+
+6. **Color Detection:**
+   - Calculate the closest color name based on RGB values using a distance formula.
+
+7. **Display Color Information:**
+   - Continuously show the image with color info upon double-click events.
+
+8. **Running the Application:**
+   - Users can execute the script, providing an image path as an argument.
